@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms Demo 01</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <form action="http://formreflector.azurewebsites.net/form-reflector/" method="POST">
+        <fieldset>
+            <legend>This is the Legend of Bob</legend>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name" autofocus="true">
+            </div>
+            <div>
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" name="user_mail" disabled="true">
+            </div>
+            <div>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="user_phone">
+            </div>
+            <div>
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="user_message"></textarea>
+            </div>
+            <div>
+                <label for="pwd">Password:</label>
+                <input type="password" id="pwd" name="pwd">
+            </div>
+            <div>
+                <input type="checkbox" id="likes-bob" name="likes-bob" value="liker-of-bob">
+                <label for="likes-bob">I Like Bob
+                </label>
+            </div>
+            <div>
+                <input type="checkbox" id="likes-bob-a-bit" name="kinda-likes-bob" value="liker-of-bob-sorta">
+                <label for="likes-bob-a-bit">I Kind of Like Bob
+                </label>
+            </div>
+            <div>
+                <label for="how-much-do-i-like-bob">How Much Do You Like Bob?</label>
+                <input type="range" min="0" max="100" step="1" id = "how-much-do-i-like-bob" name="how-much">
+            </div>
+            <div>
+                <label for="fav-color">What is Bob's Favorite Color?</label>
+                <input type="color" name="fav-color" id="fav-color">
+            </div>
+            <div>
+                <h3>Best Bob Around is:</h3>
+                <label for="best-bob1">
+                    <input type="radio" id="best-bob1" name="best-bob-around" value="Barker"> Bob Barker
+                </label>
+            </div>
+            <div>
+                <label for="best-bob2">
+                    <input type="radio" id="best-bob2" name="best-bob-around" value="the-builder"> Bob the Builder
+                </label>
+            </div>
+
+            <div>
+                <label for="games">Which Game is teh best?</label>
+                <select id="games" name="best-game" multiple>
+                    <optgroup label="Zombie Games">
+                        <option value="left4dead">Left4Dead</option>
+                        <option value="left4dead2">Left4Dead 2</option>
+                    </optgroup>
+                    <optgroup label="Not Zombie Games">
+                        <option value="witcher3">Witcher 3</option>
+                        <option value="pong">Pong</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <label for="best-number">What is the Best Number?</label>
+                <input type="number" id="best-number" name="best-number">
+            </div>
+            <div>
+                <label for="when">When?</label>
+                <input type="date" id="when" name="when">
+                <input type="datetime" id="notNow" name="when2">
+                <input type="datetime-local" id="notNowEither" name="when3">
+            </div>
+
+            <label for="myFruit">What's your favorite fruit?</label>
+            <input type="text" name="myFruit" id="myFruit" list="mySuggestion">
+            <datalist id="mySuggestion">
+              <option>Apple</option>
+              <option>Banana</option>
+              <option>Blackberry</option>
+              <option>Blueberry</option>
+              <option>Lemon</option>
+              <option>Lychee</option>
+              <option>Peach</option>
+              <option>Pear</option>
+            </datalist>
+
+            <div>
+                <label for="file">Pick a File!</label>
+                <input type="file" id="file" name="file">
+            </div>
+
+            <div>
+                <button type="submit">Submit</button>
+                <button type="reset">Make Me Mad</button>
+            </div>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
